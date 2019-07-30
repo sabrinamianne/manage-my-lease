@@ -9,8 +9,8 @@ constructor(props) {
   super(props);
   this.state = {
     viewport: {
-      width: 1250,
-      height: 1400,
+      width: 1100,
+      height: 1500,
       latitude: 47.608013,
       longitude:  -122.335167,
       zoom: 13
@@ -20,7 +20,7 @@ constructor(props) {
 }
   render() {
     const map = {
-      marginLeft: '5px',
+      marginLeft: '2%',
       float: 'left'
     }
 

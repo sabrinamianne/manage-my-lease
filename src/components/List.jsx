@@ -40,19 +40,24 @@ class List extends Component {
 }
   render() {
     const img = {
-      width: '21em',
-      height: '20em'
+      width: '350px',
+      height: '240px'
     }
     const boxApt = {
       border: '1px solid white',
-      width: '300px',
-      marginRight: '5em',
+      width: '350px',
       float: 'right',
+      marginLeft:'1px',
+      marginTop:'6%',
       height: 'auto'
     }
     const adress = {
       fontSize: '10px',
       fontWeight: 'bold'
+    }
+    const columns = {
+      columnCount: '2',
+      marginRight: '5%'
     }
 
 
@@ -63,15 +68,17 @@ class List extends Component {
               <h1>${apartment.price}/mo</h1>
               <p style={adress}>{apartment.adress}</p>
               <p><strong>{apartment.sqft}</strong> sqft | <strong>{apartment.bed}</strong> bed | <strong>{apartment.bath}</strong> bath</p>
-
             </div>
           </div>
       );
       return (
 
-          <div className="app">
+          <div>
               <Map/>
-              {apartments}
+              <div style={columns}>
+                {apartments}
+              </div>
+
           </div>
       );
   }
