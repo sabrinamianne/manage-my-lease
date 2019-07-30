@@ -1,8 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Map from './components/Map.jsx';
-
+import List from './components/List.jsx';
 
 
 function App() {
@@ -10,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <Map/>
+      <List/>
+
     </div>
   );
 }

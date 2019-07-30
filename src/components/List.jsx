@@ -2,25 +2,20 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import firebase from 'firebase';
 import {DB_CONFIG} from './Config';
-
+import Map from './Map.jsx';
 
 class List extends Component {
   constructor() {
     super()
     this.app = !firebase.apps.length ? firebase.initializeApp(DB_CONFIG) : firebase.app();
 
-     // this.database = this.app.database().ref().child('apartments').child('0').child('price');
-
-
     this.state = {
       apartments: [],
       id : 0,
-      latitude : 0,
-      longitude : 0
+
 
     }
   }
-
 
   componentDidMount() {
     const rootRef = firebase.database().ref().child('apartments');
@@ -32,6 +27,10 @@ class List extends Component {
           longitude: snap.val().lng,
           name: snap.val().name,
           price: snap.val().price,
+          sqft: snap.val().sqft,
+          bed: snap.val().bedroom,
+          bath: snap.val().bathroom,
+          adress: snap.val().adress,
           img: snap.val().imageUrl
       });
       this.setState({
@@ -41,24 +40,39 @@ class List extends Component {
 }
   render() {
     const img = {
-      width: '20em',
+      width: '21em',
       height: '20em'
+    }
+    const boxApt = {
+      border: '1px solid white',
+      width: '300px',
+      marginRight: '5em',
+      float: 'right',
+      height: 'auto'
+    }
+    const adress = {
+      fontSize: '10px',
+      fontWeight: 'bold'
     }
 
 
       const apartments = this.state.apartments.map(apartment =>
           <div>
-
-              <h1>{apartment.id}</h1>
-              <h1>{apartment.name}</h1>
-              <h1>${apartment.price}</h1>
-              <h1>{apartment.latitude}</h1>
-              <h1>{apartment.longitude}</h1>
+            <div style={boxApt}>
               <img src={apartment.img} style={img}></img>
+              <h1>${apartment.price}/mo</h1>
+              <p style={adress}>{apartment.adress}</p>
+              <p><strong>{apartment.sqft}</strong> sqft | <strong>{apartment.bed}</strong> bed | <strong>{apartment.bath}</strong> bath</p>
+
+            </div>
           </div>
       );
       return (
-          <div>{apartments}</div>
+
+          <div className="app">
+              <Map/>
+              {apartments}
+          </div>
       );
   }
 }
