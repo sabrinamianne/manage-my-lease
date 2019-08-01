@@ -69,6 +69,13 @@ getLat() {
       float: 'left',
       marginTop: '3%'
     }
+    const icon = {
+      backgroundColor: 'black',
+      border: '1px solid black',
+      borderRadius:'50%',
+      width:'15px',
+      height:'15px'
+    }
 
     const apt = this.state.apartments.map(apartment =>
           <div>
@@ -78,7 +85,7 @@ getLat() {
 
     return (
       <div>
-
+        {console.log(this.state.apartments)}
       <ReactMapGL
         style={map}
         mapStyle ="mapbox://styles/sabrinamianne/cjynf4zkn3o2a1dnwt2ufju7f"
@@ -95,9 +102,16 @@ getLat() {
         positionOptions={{enableHighAccuracy: true}}
         trackUserLocation={true}
       />
-      <div >
-
-      </div>
+    {this.state.apartments.map((apt) => {
+        return <Marker
+          latitude= {apt.latitude}
+          longitude= {apt.longitude}
+          offsetLeft={-20}
+          offsetTop={-10}
+        >
+        <div style={icon}></div>
+      </Marker>
+    })}
       </ReactMapGL>
     </div>
     );

@@ -9,7 +9,7 @@
     "bedroom": 1,
     "bathroom": 1,
     "sqft": 851,
-    "adress": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
+    "adresse": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
     "pets": "yes",
     "typePets": [
       "small dogs",
@@ -19,8 +19,56 @@
     "text": "Ready to wake up every morning to stunning panoramic views of U District and downtown Seattle? Meet Dexter. We offer residences-for-lease featuring stylish floor plans within a connected community minutes from Pike Street Market, Belltown and Queen Anne Hill. When you are ready to relax or recharge, an abundance of amenities and activities can be found right outside your front door. Walk over to Gas Works Park on Lake Union and take in a summer concert or Fourth of July fireworks. Unwind with a latte and your favorite read in one of dozens of Seattle's best coffee shops. Immerse yourself in Downtown Seattle living at Dexter.",
     "daysListed": "3",
     "Lease": "Possibilty to renew the lease directly at 08/20/19 for 12 months after validation. ",
-    "lat": 47.6311330916,
-    "lng": -122.342729.342450
+    "lat": 47.622070,
+    "lng": -122.342369
+  },
+  {
+    "name": "Sublease for 6 months this amazing house and possibility to renew the lease for 1 year",
+    "imageUrl": "https://photos.zillowstatic.com/cc_ft_960/IS7id0he5h53vs0000000000.jpg",
+    "price": 2250,
+    "newPrice": 2250,
+    "discount": "0%",
+    "period": "5 months",
+    "periodDates":"09/20/20 to 03/20/20 ",
+    "bedroom": 1,
+    "bathroom": 1,
+    "sqft": 1200,
+    "adresse": "1533 Interlaken Pl E # B, Seattle, WA 98112",
+    "pets": "yes",
+    "typePets": [
+      "small dogs",
+      "cats"
+    ],
+    "owner": "Mr Jones",
+    "text": "Open House on Saturday, August 3rd from 1 pm to 4 pm. Stop by to see this wonderful space! Individual showings available, depending on scheduling availability. Immaculate, fully remodeled day-light M-I-L suite in 1919 charming Craftsman home, tucked away in heart of Montlake on renowned Interlaken Place. Beautiful hand-laid travertine stone floors, custom arches and built-ins, millwork & trim throughout. Kitchen has over-sized farm-style porcelain sink, brand new stainless steel gas stove, full-sized stainless steel refrigerator (26 cub. ft.), stainless steel dishwasher, and microwave; and, rich granite counter-tops above extensive new cabinets. Very large bathroom features shower, tub and double sinks, set on Carrara marble-topped custom 5-foot vanity with plenty of drawers for storage beneath; matching Carrara marble accents and subway tile throughout. Bedroom boasts carpet and a large walk-in closet with English wardrobe. Laundry facilities (LG industrial-sized front-loaders) are in-unit, contained in spacious separate laundry room with generous space for folding table, cleaning supplies and lots of additional storage. Library alcove just off living room is East-facing with tons of sunlight, two granite built-in desks, and ample custom-built shelves to comfortably handle a substantial personal library collection. Home, safely and privately situated above street-level, lies in fabulous, sought-after family neighborhood in upscale Montlake: Safe, established surrounding community in special wooded, in-city area.",
+    "daysListed": "1",
+    "Lease": "Possibilty to renew the lease directly at 03/20/20 for 12 months after validation. ",
+    "lat": 47.632814,
+    "lng": -122.301122
+  },
+  {
+    "name": "Sublease for 3 months in the amazing DEXTER building or take on the lease directly",
+    "imageUrl": "https://photos.zillowstatic.com/cc_ft_960/ISfoz7t4wsbpj50000000000.jpg",
+    "price": 2155,
+    "newPrice": 1939,
+    "discount": "10%",
+    "period": "3 months",
+    "periodDates":"08/20/19 to 11/20/19 ",
+    "bedroom": 1,
+    "bathroom": 1,
+    "sqft": 851,
+    "adresse": "Illumina Lake Union, 304-i, 219 E Garfield St, Seattle, WA 98102",
+    "pets": "yes",
+    "typePets": [
+      "small dogs",
+      "cats"
+    ],
+    "owner": "EpicAssetManagement",
+    "text": "Come home to Illumina where you will experience comfortable and trendy living with many convenient features at an affordable price. Unwind while taking a leisurely stroll through South Lake Union's eclectic local shopping, cafes and eateries. Great dining, Entertainment, Parks, and not to mention Seattle's vibrant nightlife are mere minutes from your door. ",
+    "daysListed": "3",
+    "Lease": "Possibilty to renew the lease directly at 08/20/19 for 12 months after validation. ",
+    "lat": 47.633718,
+    "lng": -122.324860
   },
   {
     "name": "Sublease for 3 months in the amazing DEXTER building or take on the lease directly",
@@ -33,7 +81,7 @@
     "bedroom": 1,
     "bathroom": 1,
     "sqft": 851,
-    "adress": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
+    "adresse": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
     "pets": "yes",
     "typePets": [
       "small dogs",
@@ -43,57 +91,9 @@
     "text": "Ready to wake up every morning to stunning panoramic views of U District and downtown Seattle? Meet Dexter. We offer residences-for-lease featuring stylish floor plans within a connected community minutes from Pike Street Market, Belltown and Queen Anne Hill. When you are ready to relax or recharge, an abundance of amenities and activities can be found right outside your front door. Walk over to Gas Works Park on Lake Union and take in a summer concert or Fourth of July fireworks. Unwind with a latte and your favorite read in one of dozens of Seattle's best coffee shops. Immerse yourself in Downtown Seattle living at Dexter.",
     "daysListed": "3",
     "Lease": "Possibilty to renew the lease directly at 08/20/19 for 12 months after validation. ",
-    "lat": 47.6311330916,
-    "lng": -122.342729.342450
+    "lat": 48.630916,
+    "lng": -122.342450
   },
-  {
-    "name": "Sublease for 3 months in the amazing DEXTER building or take on the lease directly",
-    "imageUrl": "https://photos.zillowstatic.com/cc_ft_1536/IS6af4vylvm9f51000000000.webp",
-    "price": 2155,
-    "newPrice": 1939,
-    "discount": "10%",
-    "period": "3 months",
-    "periodDates":"08/20/19 to 11/20/19 ",
-    "bedroom": 1,
-    "bathroom": 1,
-    "sqft": 851,
-    "adress": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
-    "pets": "yes",
-    "typePets": [
-      "small dogs",
-      "cats"
-    ],
-    "owner": "Alliance Residential",
-    "text": "Ready to wake up every morning to stunning panoramic views of U District and downtown Seattle? Meet Dexter. We offer residences-for-lease featuring stylish floor plans within a connected community minutes from Pike Street Market, Belltown and Queen Anne Hill. When you are ready to relax or recharge, an abundance of amenities and activities can be found right outside your front door. Walk over to Gas Works Park on Lake Union and take in a summer concert or Fourth of July fireworks. Unwind with a latte and your favorite read in one of dozens of Seattle's best coffee shops. Immerse yourself in Downtown Seattle living at Dexter.",
-    "daysListed": "3",
-    "Lease": "Possibilty to renew the lease directly at 08/20/19 for 12 months after validation. ",
-    "lat": 47.6311330916,
-    "lng": -122.342729.342450
-  },
-  {
-  "name": "Sublease for 3 months in the amazing DEXTER building or take on the lease directly",
-  "imageUrl": "https://photos.zillowstatic.com/cc_ft_1536/IS6af4vylvm9f51000000000.webp",
-  "price": 2155,
-  "newPrice": 1939,
-  "discount": "10%",
-  "period": "3 months",
-  "periodDates":"08/20/19 to 11/20/19 ",
-  "bedroom": 1,
-  "bathroom": 1,
-  "sqft": 851,
-  "adress": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
-  "pets": "yes",
-  "typePets": [
-    "small dogs",
-    "cats"
-  ],
-  "owner": "Alliance Residential",
-  "text": "Ready to wake up every morning to stunning panoramic views of U District and downtown Seattle? Meet Dexter. We offer residences-for-lease featuring stylish floor plans within a connected community minutes from Pike Street Market, Belltown and Queen Anne Hill. When you are ready to relax or recharge, an abundance of amenities and activities can be found right outside your front door. Walk over to Gas Works Park on Lake Union and take in a summer concert or Fourth of July fireworks. Unwind with a latte and your favorite read in one of dozens of Seattle's best coffee shops. Immerse yourself in Downtown Seattle living at Dexter.",
-  "daysListed": "3",
-  "Lease": "Possibilty to renew the lease directly at 08/20/19 for 12 months after validation. ",
-  "lat": 47.6311330916,
-  "lng": -122.342729.342450
-},
 {
 "name": "Sublease for 3 months in the amazing DEXTER building or take on the lease directly",
 "imageUrl": "https://photos.zillowstatic.com/cc_ft_1536/IS6af4vylvm9f51000000000.webp",
@@ -105,7 +105,7 @@
 "bedroom": 1,
 "bathroom": 1,
 "sqft": 851,
-"adress": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
+"adresse": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
 "pets": "yes",
 "typePets": [
   "small dogs",
@@ -115,8 +115,8 @@
 "text": "Ready to wake up every morning to stunning panoramic views of U District and downtown Seattle? Meet Dexter. We offer residences-for-lease featuring stylish floor plans within a connected community minutes from Pike Street Market, Belltown and Queen Anne Hill. When you are ready to relax or recharge, an abundance of amenities and activities can be found right outside your front door. Walk over to Gas Works Park on Lake Union and take in a summer concert or Fourth of July fireworks. Unwind with a latte and your favorite read in one of dozens of Seattle's best coffee shops. Immerse yourself in Downtown Seattle living at Dexter.",
 "daysListed": "3",
 "Lease": "Possibilty to renew the lease directly at 08/20/19 for 12 months after validation. ",
-"lat": 47.6311330916,
-"lng": -122.342729.342450
+"lat": 48.630916,
+"lng": -122.342450
 },
   {
     "name": "Sublease for 3 months in the amazing DEXTER building or take on the lease directly",
@@ -129,7 +129,7 @@
     "bedroom": 1,
     "bathroom": 1,
     "sqft": 851,
-    "adress": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
+    "adresse": "Dexter Lake Union, APT 511, 1215 Dexter Ave N, Seattle, WA 98109",
     "pets": "yes",
     "typePets": [
       "small dogs",
@@ -139,7 +139,7 @@
     "text": "Ready to wake up every morning to stunning panoramic views of U District and downtown Seattle? Meet Dexter. We offer residences-for-lease featuring stylish floor plans within a connected community minutes from Pike Street Market, Belltown and Queen Anne Hill. When you are ready to relax or recharge, an abundance of amenities and activities can be found right outside your front door. Walk over to Gas Works Park on Lake Union and take in a summer concert or Fourth of July fireworks. Unwind with a latte and your favorite read in one of dozens of Seattle's best coffee shops. Immerse yourself in Downtown Seattle living at Dexter.",
     "daysListed": "3",
     "Lease": "Possibilty to renew the lease directly at 08/20/19 for 12 months after validation. ",
-    "lat": 47.6311330916,
-    "lng": -122.342729.342450
+    "lat": 48.630916,
+    "lng": -122.342450
   }]
   }

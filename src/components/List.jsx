@@ -29,9 +29,10 @@ class List extends Component {
       this.setState({
         latitude: snapshot.val().lat,
         longitude: snapshot.val().lng,
+        key: snapshot.val().key,
       })
     })
-    alert(this.state.apartments[key].latitude);
+    alert(key);
   }
 
   handleChangingSelectedApartment(key) {
@@ -98,13 +99,7 @@ class List extends Component {
             </div>
           </div>
       );
-      const icon = {
-        backgroundColor: 'black',
-        border: '1px solid black',
-        borderRadius:'50%',
-        width:'15px',
-        height:'15px'
-      }
+
       const apt = this.state.apartments.map(apartment =>
             apartment.longitude
       );
@@ -116,21 +111,10 @@ class List extends Component {
             <Header>
             </Header>
               <Map
-
               onSelectionApt = {this.handleChangingSelectedApartment}
               selectedApt = {this.state.selectedApt}
               >
-              {this.state.apartments.map(apt => (
-                  <Marker
-                    key={apt.key}
-                    lat={apt.lat}
-                    longitude={apt.long}
-                    offsetLeft={-20}
-                    offsetTop={-10}
-                  >
-                  <div style={icon}>here</div>
-                </Marker>
-              ))}
+
               </Map>
 
               <div

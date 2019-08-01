@@ -39,6 +39,16 @@ function Home() {
      width: '40px',
      height: '40px'
    }
+   const col = {
+     marginLeft: '2px',
+     columnCount: '3',
+     color: '#434345'
+   }
+
+   const cols = {
+     marginTop: '5%',
+     marginBottom: '5%',
+   }
 
   return (
     <div>
@@ -71,6 +81,17 @@ function Home() {
         style={links}>
         <span id="text">Enter an adress, city or ZIP code </span><Link id="link" to="/rental"><span><img style = {loupe} src={Loupe}></img></span></Link>
         </div>
+      </div>
+      <div style={cols}>
+        <h4 style={col}>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an xt ever since the 1500s, when an endend!!
+        </h4>
+        <h4 style={col}>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an xt ever since the 1500s, when an endend!!
+        </h4>
+        <h4 style={col}>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an xt ever since the 1500s, when an endend!!
+      </h4>
       </div>
 
   </div>
