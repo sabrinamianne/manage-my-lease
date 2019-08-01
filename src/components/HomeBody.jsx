@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import Img from '.././assets/img/home.jpg';
 import Loupe from '.././assets/img/loupe.svg.png';
+import Footer from './Footer.jsx';
 
 
-
-function Home() {
+function HomeBody() {
 
   const links = {
   width: '50em',
@@ -93,9 +93,9 @@ function Home() {
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an xt ever since the 1500s, when an endend!!
       </h4>
       </div>
-
+      <Footer/>
   </div>
   );
 }
 
-export default Home;
+export default HomeBody;

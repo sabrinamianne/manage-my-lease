@@ -70,11 +70,11 @@ getLat() {
       marginTop: '3%'
     }
     const icon = {
-      backgroundColor: 'black',
-      border: '1px solid black',
+      backgroundColor: '#0d00ff',
+      border: '4px solid black',
       borderRadius:'50%',
-      width:'15px',
-      height:'15px'
+      width:'14px',
+      height:'14px'
     }
 
     const apt = this.state.apartments.map(apartment =>

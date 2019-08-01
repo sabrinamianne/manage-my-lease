@@ -4,6 +4,7 @@ import firebase from 'firebase';
 import ReactMapGL, {GeolocateControl,NavigationControl, Marker} from "react-map-gl";
 import {DB_CONFIG} from './Config';
 import Map from './Map.jsx';
+import Footer from './Footer.jsx';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar.jsx';
 import Header from './Header.jsx';
@@ -73,7 +74,7 @@ class List extends Component {
       border: '1px solid white',
       width: '350px',
       float: 'right',
-      marginLeft:'1px',
+      marginLeft:'4%',
       marginTop:'17%',
       height: 'auto'
     }
@@ -121,6 +122,7 @@ class List extends Component {
               style={columns}>
               {apartments}
               </div>
+              <Footer></Footer>
           </div>
       );
   }

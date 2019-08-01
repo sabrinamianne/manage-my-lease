@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import HomeBody from './HomeBody.jsx';
 import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+
 
 function Home() {
   const img = {
@@ -16,6 +18,7 @@ function Home() {
         style={img}/>
       <hr/>
       <HomeBody/>
+      
     </div>
   );
 }
