@@ -14,7 +14,7 @@ function Home() {
   }
   const space1 = {
     marginRight: '4%',
-    marginLeft: '18%'
+    marginLeft: '19%'
   }
   const space= {
     marginRight: '3%'

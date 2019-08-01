@@ -16,8 +16,8 @@ constructor(props) {
   this.state = {
     apartments: [],
     viewport: {
-      width: 1100,
-      height: 1200,
+      width: 1400,
+      height: 1400,
       latitude: 47.608013,
       longitude:  -122.335167,
       zoom: 13,
@@ -46,17 +46,17 @@ componentDidMount() {
   });
 }
 
-  getLong() {
-    const apt = this.state.apartments.map(apartment =>
-    [apartment.longitude]);
-    return apt;
-}
-
-getLat() {
-  const apt = this.state.apartments.map(apartment =>
-  [apartment.latitude]);
-  return apt;
-}
+  // getLong() {
+  //   const apt = this.state.apartments.map(apartment =>
+  //   [apartment.longitude]);
+  //   return apt;
+  // }
+  //
+  // getLat() {
+  //   const apt = this.state.apartments.map(apartment =>
+  //   [apartment.latitude]);
+  //   return apt;
+  // }
 
 
 
@@ -85,7 +85,7 @@ getLat() {
 
     return (
       <div>
-        {console.log(this.state.apartments)}
+      
       <ReactMapGL
         style={map}
         mapStyle ="mapbox://styles/sabrinamianne/cjynf4zkn3o2a1dnwt2ufju7f"

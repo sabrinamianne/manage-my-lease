@@ -6,7 +6,7 @@ function Footer() {
 
   const footer = {
     border: '1px solid #edf6ff',
-    backgroundColor: '#edf6ff',
+    backgroundColor: '#baddff',
     width: '100%',
     height: '20em',
     position: 'absolute',

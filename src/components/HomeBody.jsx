@@ -26,6 +26,7 @@ function HomeBody() {
   const image = {
     marginTop: '2%',
     width: '100%',
+    height: '63em',
     zIndex: '-1'
   }
    const p = {

@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import Navbar from './Navbar.jsx';
 import Header from './Header.jsx';
 import {Link} from 'react-router-dom';
+import NewWindow from 'react-new-window'
 
 class List extends Component {
   constructor(props) {
@@ -25,15 +26,20 @@ class List extends Component {
   }
 
   handleClickSelectApartment(key) {
-    const ref = firebase.database().ref('apartments').child(key).child('price');
+    const ref = firebase.database().ref('apartments').child(key);
     ref.on('value', snapshot => {
       this.setState({
         latitude: snapshot.val().lat,
         longitude: snapshot.val().lng,
         key: snapshot.val().key,
+        bath: snapshot.val().bath,
+        bed: snapshot.val().bed,
+        sqft: snapshot.val().sqft,
+        name: snapshot.val().name
       })
     })
-    alert(key);
+    alert(this.state.apartments[key].name+" "+"Sqft: "+this.state.apartments[key].sqft + " Bedroom:  " + this.state.apartments[key].bed+" Bathroom: "+this.state.apartments[key].bath )
+
   }
 
   handleChangingSelectedApartment(key) {
@@ -56,7 +62,7 @@ class List extends Component {
           sqft: snap.val().sqft,
           bed: snap.val().bedroom,
           bath: snap.val().bathroom,
-          adress: snap.val().adress,
+          adress: snap.val().adresse,
           img: snap.val().imageUrl
       });
       this.setState({
@@ -66,9 +72,15 @@ class List extends Component {
 }
 
   render() {
+    const Demo = () => (
+      <NewWindow>
+        <h1>Hi 👋</h1>
+      </NewWindow>
+    )
+
     const img = {
-      width: '350px',
-      height: '240px'
+      width: '400px',
+      height: '260px'
     }
     const boxApt = {
       border: '1px solid white',
@@ -76,6 +88,7 @@ class List extends Component {
       float: 'right',
       marginLeft:'4%',
       marginTop:'17%',
+      marginBottom: '10%',
       height: 'auto'
     }
     const adress = {
@@ -122,7 +135,6 @@ class List extends Component {
               style={columns}>
               {apartments}
               </div>
-              <Footer></Footer>
           </div>
       );
   }
