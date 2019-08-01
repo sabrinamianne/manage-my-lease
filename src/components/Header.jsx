@@ -6,10 +6,8 @@ function Header() {
   const header = {
     height: '5em',
     width: '100%',
-    borderTop: '1px solid grey',
-    borderBottom: '1px solid grey',
     marginBottom: '0',
-    backgroundColor: '#2e2d2e',
+    backgroundColor: '#baddff',
     marginTop: '1.5%',
     color: 'white',
     fontFamily: 'Courier New'

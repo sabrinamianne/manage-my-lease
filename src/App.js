@@ -1,16 +1,21 @@
 import React from 'react';
 import './App.css';
 import List from './components/List.jsx';
-import Navbar from './components/Navbar.jsx';
-import Header from './components/Header.jsx';
+import {Switch, Route, BrowserRouter} from 'react-router-dom';
+import Home from './components/Home.jsx';
+
+
 
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Header/>
-      <List/>
+        <BrowserRouter>
+         <Switch>
+            <Route  exact path='/' component={Home}/>
+            <Route path='/rental' render={()=><List/>} />
+         </Switch>
+       </BrowserRouter>
 
     </div>
   );

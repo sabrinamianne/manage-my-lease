@@ -3,26 +3,48 @@ import ReactDOM from 'react-dom';
 import firebase from 'firebase';
 import {DB_CONFIG} from './Config';
 import Map from './Map.jsx';
+import PropTypes from 'prop-types';
+import Navbar from './Navbar.jsx';
+import Header from './Header.jsx';
 
 class List extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.app = !firebase.apps.length ? firebase.initializeApp(DB_CONFIG) : firebase.app();
 
     this.state = {
       apartments: [],
-      id : 0,
+      key : 0,
+      selectedApt: null
 
-
-    }
+    };
+    this.handleChangingSelectedApartment = this.handleChangingSelectedApartment.bind(this);
   }
+
+  handleClickSelectApartment(key) {
+    const ref = firebase.database().ref('apartments').child(key).child('price');
+    ref.on('value', snapshot => {
+      this.setState({
+        latitude: snapshot.val().lat,
+        longitude: snapshot.val().lng,
+      })
+    })
+    alert(this.state.apartments[key].latitude);
+  }
+
+  handleChangingSelectedApartment(key) {
+        this.setState({selectedApt: key});
+  }
+
+
+
 
   componentDidMount() {
     const rootRef = firebase.database().ref().child('apartments');
     rootRef.on('child_added', snap => {
       const previousList = this.state.apartments;
       previousList.push({
-          id: snap.key,
+          key: snap.key,
           latitude: snap.val().lat,
           longitude: snap.val().lng,
           name: snap.val().name,
@@ -38,6 +60,7 @@ class List extends Component {
       });
   });
 }
+
   render() {
     const img = {
       width: '350px',
@@ -63,7 +86,9 @@ class List extends Component {
 
       const apartments = this.state.apartments.map(apartment =>
           <div>
-            <div style={boxApt}>
+            <div
+              style={boxApt}
+              onClick={() => {this.handleClickSelectApartment(apartment.key);}}>
               <img src={apartment.img} style={img}></img>
               <h1>${apartment.price}/mo</h1>
               <p style={adress}>{apartment.adress}</p>
@@ -71,14 +96,21 @@ class List extends Component {
             </div>
           </div>
       );
+
+
       return (
 
           <div>
-              <Map/>
-              <div style={columns}>
-                {apartments}
+            <Navbar/>
+            <Header/>
+              <Map
+              onSelectionApt = {this.handleChangingSelectedApartment}
+              selectedApt = {this.state.selectedApt}
+              />
+              <div
+              style={columns}>
+              {apartments}
               </div>
-
           </div>
       );
   }

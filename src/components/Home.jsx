@@ -1,11 +1,21 @@
 import React from 'react';
-
-
+import {Link} from 'react-router-dom';
+import Navbar from './Navbar.jsx';
+import HomeBody from './HomeBody.jsx';
+import Header from './Header.jsx';
 
 function Home() {
+  const img = {
+    width: '60em',
+    height: '10em'
+  }
+
   return (
     <div>
-      <h1>Home component</h1>
+      <Navbar
+        style={img}/>
+      <hr/>
+      <HomeBody/>
     </div>
   );
 }

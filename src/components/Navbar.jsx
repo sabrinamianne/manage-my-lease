@@ -4,14 +4,15 @@ import logo from '../assets/img/logo.png';
 function Home() {
   const nav = {
     width: '100%',
+    height: '50px',
     backgroundColor: 'white',
     display : 'inline-flex',
     fontSize: '18px',
-    marginTop: '1%'
+    marginTop: '2em',
   }
   const space1 = {
-    marginRight: '3%',
-    marginLeft: '15%'
+    marginRight: '4%',
+    marginLeft: '18%'
   }
   const space= {
     marginRight: '3%'
@@ -19,16 +20,17 @@ function Home() {
 
   const right= {
     float: 'right',
-    marginLeft: '20%',
+    marginLeft: '25%',
   }
   const right2= {
     float: 'right',
     marginLeft: '4%'
   }
 
-  const logO= {
-    marginLeft: '13%',
-    height: '70px'
+  const logO = {
+    marginLeft: '42%',
+    height: '240px',
+    position: 'absolute',
   }
 
   return (
