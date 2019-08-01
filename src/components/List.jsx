@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import firebase from 'firebase';
+import ReactMapGL, {GeolocateControl,NavigationControl, Marker} from "react-map-gl";
 import {DB_CONFIG} from './Config';
 import Map from './Map.jsx';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar.jsx';
 import Header from './Header.jsx';
+import {Link} from 'react-router-dom';
 
 class List extends Component {
   constructor(props) {
@@ -45,8 +47,8 @@ class List extends Component {
       const previousList = this.state.apartments;
       previousList.push({
           key: snap.key,
-          latitude: snap.val().lat,
-          longitude: snap.val().lng,
+          lat: snap.val().lat,
+          long: snap.val().lng,
           name: snap.val().name,
           price: snap.val().price,
           sqft: snap.val().sqft,
@@ -71,7 +73,7 @@ class List extends Component {
       width: '350px',
       float: 'right',
       marginLeft:'1px',
-      marginTop:'6%',
+      marginTop:'17%',
       height: 'auto'
     }
     const adress = {
@@ -96,17 +98,41 @@ class List extends Component {
             </div>
           </div>
       );
-
+      const icon = {
+        backgroundColor: 'black',
+        border: '1px solid black',
+        borderRadius:'50%',
+        width:'15px',
+        height:'15px'
+      }
+      const apt = this.state.apartments.map(apartment =>
+            apartment.longitude
+      );
 
       return (
 
           <div>
             <Navbar/>
-            <Header/>
+            <Header>
+            </Header>
               <Map
+
               onSelectionApt = {this.handleChangingSelectedApartment}
               selectedApt = {this.state.selectedApt}
-              />
+              >
+              {this.state.apartments.map(apt => (
+                  <Marker
+                    key={apt.key}
+                    lat={apt.lat}
+                    longitude={apt.long}
+                    offsetLeft={-20}
+                    offsetTop={-10}
+                  >
+                  <div style={icon}>here</div>
+                </Marker>
+              ))}
+              </Map>
+
               <div
               style={columns}>
               {apartments}

@@ -1,13 +1,12 @@
 import React, {Component}  from 'react';
 import List from './List.jsx';
 import ApartmentDetails from './ApartmentDetails.jsx';
-import ReactMapGL, {GeolocateControl, Marker} from "react-map-gl";
+import ReactMapGL, {GeolocateControl, NavigationControl,Marker} from "react-map-gl";
 import firebase from 'firebase';
 import CSS from 'mapbox-gl/src/css/mapbox-gl.css';
 import PropTypes from 'prop-types';
 import {DB_CONFIG} from './Config';
 const TOKEN = 'pk.eyJ1Ijoic2FicmluYW1pYW5uZSIsImEiOiJjanluZW03bGswdDVoM2NteWxyb2V5YXB6In0.nKJ9ChU5Otb3j3pwTQ9mxA';
-
 
 
 class Map extends Component {
@@ -18,7 +17,7 @@ constructor(props) {
     apartments: [],
     viewport: {
       width: 1100,
-      height: 1500,
+      height: 1200,
       latitude: 47.608013,
       longitude:  -122.335167,
       zoom: 13,
@@ -68,7 +67,7 @@ getLat() {
     const map = {
       marginLeft: '2%',
       float: 'left',
-      marginTop: '2px'
+      marginTop: '3%'
     }
 
     const apt = this.state.apartments.map(apartment =>
@@ -78,20 +77,27 @@ getLat() {
     );
 
     return (
-    <div>
-      <p></p>
+      <div>
+
       <ReactMapGL
         style={map}
         mapStyle ="mapbox://styles/sabrinamianne/cjynf4zkn3o2a1dnwt2ufju7f"
         mapboxApiAccessToken={TOKEN}
         {...this.state.viewport}
         onViewportChange={(viewport) => this.setState({viewport})}
-      >
+        children={this.props.children}
+        >
+      <div style={{position: 'absolute', right: 0}}>
+          <NavigationControl />
+        </div>
       <GeolocateControl
+        style={{position: 'absolute',left: 0}}
         positionOptions={{enableHighAccuracy: true}}
         trackUserLocation={true}
       />
-    
+      <div >
+
+      </div>
       </ReactMapGL>
     </div>
     );

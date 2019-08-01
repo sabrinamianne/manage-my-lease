@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from '../assets/img/logo.png';
+import {Link} from 'react-router-dom';
+
 
 function Home() {
   const nav = {
@@ -35,8 +37,21 @@ function Home() {
 
   return (
     <div style={nav}>
-      <p style={space1}>Home</p>
-      <p style={space}>Rent </p>
+      <style jsx> {`
+        #link:link {
+            text-decoration: none;
+          }
+        #link {
+
+          float: right;
+          font-size: 18px;
+          color: black;
+        }
+
+          `}
+      </style>
+      <p style={space1}><Link id="link" to="/">Home</Link></p>
+      <p style={space}><Link id="link" to="/rental">Rent</Link></p>
       <p style={space}>List your rental</p>
       <img src={logo} style={logO}></img>
       <p style={right}>Help</p>
