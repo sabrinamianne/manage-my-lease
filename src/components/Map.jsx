@@ -16,8 +16,8 @@ constructor(props) {
   this.state = {
     apartments: [],
     viewport: {
-      width: 1400,
-      height: 1400,
+      width: 1100,
+      height: 1450,
       latitude: 47.608013,
       longitude:  -122.335167,
       zoom: 13,
@@ -85,7 +85,7 @@ componentDidMount() {
 
     return (
       <div>
-      
+
       <ReactMapGL
         style={map}
         mapStyle ="mapbox://styles/sabrinamianne/cjynf4zkn3o2a1dnwt2ufju7f"

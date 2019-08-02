@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import Navbar from './Navbar.jsx';
 import Header from './Header.jsx';
 import {Link} from 'react-router-dom';
-import NewWindow from 'react-new-window'
+
 
 class List extends Component {
   constructor(props) {
@@ -72,14 +72,9 @@ class List extends Component {
 }
 
   render() {
-    const Demo = () => (
-      <NewWindow>
-        <h1>Hi 👋</h1>
-      </NewWindow>
-    )
 
     const img = {
-      width: '400px',
+      width: '350px',
       height: '260px'
     }
     const boxApt = {
